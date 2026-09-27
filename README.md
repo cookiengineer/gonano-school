@@ -15,7 +15,7 @@ kiwix online catalog -> updater.go -> updates manifest.json
 manifest.json -> downloader.go -> downloads datasets/*.zim
 
 # this will create symbolic links from the 1 corpus model back to the n markdown datasets
-datasets/{name}.zim -> zim2md -> exports dataset/markdown/${name} and datasets/corpus/$model}
+datasets/{name}.zim -> zim2md -> exports datasets/markdown/${name} and datasets/corpus/$model}
 ```
 
 ## Status
@@ -69,7 +69,7 @@ go run ./cmd/updater -keep-going;
 go run ./cmd/downloader -max-bytes $((6 * 1000 * 1000 * 1000 * 1000));
 
 # one model's corpus
-go run ./cmd/downloader -model gonano-physics;;
+go run ./cmd/downloader -model gonano-physics;
 
 # by category or by Kiwix site
 go run ./cmd/downloader -category cybersecurity;
