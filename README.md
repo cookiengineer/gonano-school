@@ -29,6 +29,9 @@ datasets/{name}.zim -> zim2md -> exports dataset/markdown/${name} and datasets/c
 ## Building and Testing
 
 ```bash
+# Install dependencies
+go install github.com/cookiengineer/zim2md@latest;
+
 go build ./...;
 go vet ./...;
 go test ./...;
