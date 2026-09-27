@@ -1,0 +1,7 @@
+*.part
+*.tmp
+datasets/**/*.zim
+datasets/**/*.zim.meta4
+datasets/markdown/
+datasets/corpus/
+*.zim2md.report.txt
