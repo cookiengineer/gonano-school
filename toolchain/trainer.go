@@ -13,12 +13,13 @@ import (
 	"strings"
 )
 
-// Defaults for the training wrapper. They mirror gonano's own defaults where a
-// sensible one exists; VocabSize and NumIterations are chosen for the
-// gonano-school corpora and are meant to be overridden on the command line.
+// Defaults for the training wrapper. VocabSize and Depth mirror gonano's own
+// defaults (model.DefaultVocabSize and model.DefaultDepth); NumIterations is
+// chosen for the gonano-school corpora. All are meant to be overridden on the
+// command line.
 const (
-	DefaultTrainVocabSize       = 32768
-	DefaultTrainDepth           = 8
+	DefaultTrainVocabSize       = 131072
+	DefaultTrainDepth           = 20
 	DefaultTrainPreset          = "flash"
 	DefaultTrainMaxSeqLen       = 512
 	DefaultTrainNumIterations   = 200

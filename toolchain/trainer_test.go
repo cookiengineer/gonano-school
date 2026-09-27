@@ -103,7 +103,7 @@ func TestTrainCommandSequence(t *testing.T) {
 	if tokenizer.Args[1] != "./cmd/tok_train" {
 		t.Fatalf("first command = %#v, want tok_train", tokenizer.Args)
 	}
-	for _, want := range []string{"--data-format", "markdown", "--vocab-size", "32768"} {
+	for _, want := range []string{"--data-format", "markdown", "--vocab-size", "131072"} {
 		if !containsArg(tokenizer.Args, want) {
 			t.Errorf("tok_train argv missing %q: %#v", want, tokenizer.Args)
 		}

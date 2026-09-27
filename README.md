@@ -142,7 +142,7 @@ reused) because each specialty continues from it; selecting only
 ```bash
 # everything: tokenizer + base + all selected domains
 go run ./cmd/trainer -gonano-dir ~/Software/cookiengineer/gonano \
-  -depth 8 -num-iterations 200;
+  -vocab-size 131072 -depth 20 -num-iterations 200;
 
 # one specialty (base is trained first unless -reuse-base)
 go run ./cmd/trainer -gonano-dir ~/Software/cookiengineer/gonano \
@@ -157,9 +157,14 @@ go run ./cmd/trainer -gonano-dir ~/Software/cookiengineer/gonano -keep-going;
 go run ./cmd/trainer -gonano-dir ~/Software/cookiengineer/gonano -dry-run;
 ```
 
-Defaults are `-vocab-size 32768`, `-depth 8`, `-preset flash`, `-num-iterations
-200`; override them for the target host. `-base-dir` defaults to
-`$GONANO_BASE_DIR` or `~/.cache/gonano`.
+Defaults are `-vocab-size 131072`, `-depth 20`, `-preset flash`,
+`-num-iterations 200`; override them for the target host. `-base-dir` defaults to
+`$GONANO_BASE_DIR` or `~/.cache/gonano`. The model size follows from `-depth`
+and `-vocab-size`: depth 20 with a 131072 vocabulary targets roughly 5.3B total
+/ 1.6B active parameters and needs a large-RAM host; lower `-depth` (and
+`-vocab-size`) to fit a smaller machine. Note that `-vocab-size` only takes
+effect when the tokenizer is trained, so pass `-force-tokenizer` to change it
+after a tokenizer already exists.
 
 ## The `manifest.json`
 
