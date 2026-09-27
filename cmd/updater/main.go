@@ -1,4 +1,7 @@
-// Command updater scrapes the Kiwix catalog and regenerates manifest.json.
+// Command updater scrapes the Kiwix catalog and regenerates the per-category
+// manifest files (datasets/<category>.json). Static files such as
+// datasets/reasoning.json are never touched, so hand-maintained corpora
+// survive every update.
 package main
 
 import (
@@ -13,7 +16,7 @@ import (
 )
 
 func main() {
-	out := flag.String("out", "manifest.json", "manifest output path")
+	datasets := flag.String("datasets", "datasets", "directory the per-category manifest files live in")
 	lang := flag.String("lang", "eng", "catalog language filter")
 	count := flag.Int("count", 100, "catalog page size")
 	baseURL := flag.String("base-url", toolchain.DefaultCatalogBase, "catalog base URL")
@@ -36,9 +39,12 @@ func main() {
 		fmt.Fprintln(os.Stderr, "updater:", err)
 		os.Exit(1)
 	}
-	if err := toolchain.SaveManifest(*out, manifest); err != nil {
+
+	// The updater owns exactly the catalog categories; reasoning.json and any
+	// other unmanaged file are left alone.
+	if err := toolchain.SaveManifests(*datasets, manifest, toolchain.Categories); err != nil {
 		fmt.Fprintln(os.Stderr, "updater:", err)
 		os.Exit(1)
 	}
-	fmt.Printf("wrote %s: %d datasets, %d bytes\n", *out, len(manifest), manifest.TotalSize())
+	fmt.Printf("wrote %s/<category>.json: %d datasets, %d bytes\n", *datasets, len(manifest), manifest.TotalSize())
 }

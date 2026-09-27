@@ -26,9 +26,8 @@ func (list *stringList) Set(value string) error {
 }
 
 func main() {
-	manifestPath := flag.String("manifest", "manifest.json", "manifest path")
+	datasetsDir := flag.String("datasets", "datasets", "directory the per-category manifest files live in")
 	root := flag.String("root", ".", "root directory the manifest keys are relative to")
-	corpus := flag.String("corpus", "", "corpus root (default <root>/datasets/corpus)")
 	gonanoDir := flag.String("gonano-dir", "", "gonano source checkout (required); commands run via `go run ./cmd/...`")
 	baseDir := flag.String("base-dir", "", "gonano cache/checkpoint dir (default $GONANO_BASE_DIR or ~/.cache/gonano)")
 	modelTag := flag.String("model-tag", "", "checkpoint directory name (default d<depth>)")
@@ -50,7 +49,7 @@ func main() {
 	flag.Var(&sites, "site", "select by kiwix category, e.g. phet (repeatable)")
 	flag.Parse()
 
-	manifest, err := toolchain.LoadManifest(*manifestPath)
+	manifest, err := toolchain.LoadManifests(*datasetsDir)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "trainer:", err)
 		os.Exit(1)
@@ -71,7 +70,7 @@ func main() {
 
 	err = toolchain.Train(ctx, items, toolchain.TrainOptions{
 		RootDir:         *root,
-		CorpusDir:       *corpus,
+		DatasetsDir:     *datasetsDir,
 		BaseDir:         *baseDir,
 		GonanoDir:       *gonanoDir,
 		VocabSize:       *vocabSize,

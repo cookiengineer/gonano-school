@@ -24,7 +24,7 @@ func (list *stringList) Set(value string) error {
 }
 
 func main() {
-	manifestPath := flag.String("manifest", "manifest.json", "manifest path")
+	datasetsDir := flag.String("datasets", "datasets", "directory the per-category manifest files live in")
 	root := flag.String("root", ".", "root directory the manifest keys are relative to")
 	var models, categories, sites stringList
 	flag.Var(&models, "model", "select by model name, e.g. gonano-science (repeatable)")
@@ -36,17 +36,18 @@ func main() {
 	retry := flag.Int("retry", 4, "download retries")
 	flag.Parse()
 
-	manifest, err := toolchain.LoadManifest(*manifestPath)
+	manifest, err := toolchain.LoadManifests(*datasetsDir)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "downloader:", err)
 		os.Exit(1)
 	}
 
-	items := toolchain.Select(manifest, toolchain.Filter{
+	// Reasoning datasets are fetched by cmd/reasoning, not as ZIM archives.
+	items := toolchain.OnlyZIM(toolchain.Select(manifest, toolchain.Filter{
 		Models:     models,
 		Categories: categories,
 		Sites:      sites,
-	})
+	}))
 	if len(items) == 0 {
 		fmt.Fprintln(os.Stderr, "downloader: no datasets matched the given filters")
 		os.Exit(1)

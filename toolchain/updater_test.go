@@ -99,13 +99,13 @@ func TestUpdateBuildsManifest(t *testing.T) {
 		model string
 		size  int64
 	}{
-		"datasets/wikipedia/wikipedia_en_physics_nopic_2026-07.zim":                        {ModelName(CategoryPhysics), 900},
-		"datasets/wikipedia/wikipedia_en-simple_all_nopic_2026-06.zim":                     {ModelName(CategoryBase), 600},
-		"datasets/stack_exchange/physics.stackexchange.com_en_all_2026-08.zim":             {ModelName(CategoryPhysics), 500},
-		"datasets/stack_exchange/softwareengineering.stackexchange.com_en_all_2026-08.zim": {ModelName(CategoryProgramming), 400},
-		"datasets/stack_exchange/engineering.stackexchange.com_en_all_2026-08.zim":         {ModelName(CategoryEngineering), 300},
-		"datasets/other/planetmath.org_en_all_2026-08.zim":                                 {ModelName(CategoryMath), 200},
-		"datasets/other/armypubs_en_all_2024-12.zim":                                       {ModelName(CategoryCyberstrategy), 100},
+		"datasets/physics/wikipedia_en_physics_nopic_2026-07.zim":                       {ModelName(CategoryPhysics), 900},
+		"datasets/base/wikipedia_en-simple_all_nopic_2026-06.zim":                       {ModelName(CategoryBase), 600},
+		"datasets/physics/physics.stackexchange.com_en_all_2026-08.zim":                 {ModelName(CategoryPhysics), 500},
+		"datasets/programming/softwareengineering.stackexchange.com_en_all_2026-08.zim": {ModelName(CategoryProgramming), 400},
+		"datasets/engineering/engineering.stackexchange.com_en_all_2026-08.zim":         {ModelName(CategoryEngineering), 300},
+		"datasets/math/planetmath.org_en_all_2026-08.zim":                               {ModelName(CategoryMath), 200},
+		"datasets/cyberstrategy/armypubs_en_all_2024-12.zim":                            {ModelName(CategoryCyberstrategy), 100},
 	}
 	if len(manifest) != len(expected) {
 		t.Fatalf("manifest has %d entries, want %d:\n%#v", len(manifest), len(expected), manifest)

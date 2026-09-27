@@ -8,6 +8,12 @@ import (
 	"gonano-school/toolchain/types"
 )
 
+// CategoryReasoning tags the statically required reasoning datasets. Unlike
+// the other categories it is not a gonano model suffix: reasoning corpora are
+// linked into gonano-base, so their Model stays "gonano-base" and they also
+// carry the "base" tag.
+const CategoryReasoning = "reasoning"
+
 // Category names are exactly the suffixes of the gonano model names. A
 // "gonano-base" model is trained on datasets tagged "base", and so on.
 const (
@@ -44,6 +50,9 @@ var Categories = []string{
 
 // ModelName returns the gonano model name for a category.
 func ModelName(category string) string { return ModelPrefix + category }
+
+// ModelCategory returns the category suffix of a gonano model name.
+func ModelCategory(model string) string { return strings.TrimPrefix(model, ModelPrefix) }
 
 // nameRule maps a case-insensitive substring of a dataset name to a category.
 type nameRule struct {
@@ -359,12 +368,13 @@ func BuildDataset(kiwixCategory string, entry types.Entry) (string, types.Datase
 	if filename == "" {
 		return "", types.Dataset{}, false
 	}
-	key := path.Join("datasets", kiwixCategory, filename)
+	key := path.Join("datasets", category, filename)
 	return key, types.Dataset{
 		URL:        strings.TrimSuffix(link.Href, ".meta4"),
 		Categories: []string{category},
 		Model:      ModelName(category),
 		Size:       link.Length,
+		Site:       kiwixCategory,
 	}, true
 }
 

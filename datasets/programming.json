@@ -1,0 +1,533 @@
+{
+  "datasets/programming/ai.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/ai.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 104587264,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/android.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/android.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 411445248,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/apple.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/apple.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 1193034752,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/arduino.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/arduino.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 259175424,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/askubuntu.com_en_all_2026-06.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/askubuntu.com_en_all_2026-06.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 2767308800,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/blender.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/blender.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 2837102592,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/codegolf.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/codegolf.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 392548352,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/codereview.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/codereview.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 551498752,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/computergraphics.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/computergraphics.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 53078016,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/craftcms.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/craftcms.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 63262720,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/cs.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/cs.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 276372480,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/cstheory.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/cstheory.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 74275840,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/dart.dev_en_all_2026-05.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/dart.dev_en_all_2026-05.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 133380096,
+    "site": "other"
+  },
+  "datasets/programming/datascience.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/datascience.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 272756736,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/dba.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/dba.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 700760064,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/devhints.io_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/devhints.io_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 3655680,
+    "site": "other"
+  },
+  "datasets/programming/devops.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/devops.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 34522112,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/docs.python.org_en_all_2026-08a.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/docs.python.org_en_all_2026-08a.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 3959219200,
+    "site": "other"
+  },
+  "datasets/programming/drupal.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/drupal.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 428107776,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/elementaryos.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/elementaryos.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 56979456,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/emacs.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/emacs.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 151902208,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/expressionengine.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/expressionengine.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 49964032,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/gamedev.stackexchange.com_en_all_2026-02.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/gamedev.stackexchange.com_en_all_2026-02.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 532396032,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/genai.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/genai.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 11140096,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/getbootstrap.com_en_all_2026-06.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/getbootstrap.com_en_all_2026-06.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 49137664,
+    "site": "other"
+  },
+  "datasets/programming/gobyexample.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/gobyexample.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 330752,
+    "site": "other"
+  },
+  "datasets/programming/htdp.org_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/htdp.org_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 1986560,
+    "site": "other"
+  },
+  "datasets/programming/iot.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/iot.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 20597760,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/jeffe.cs.illinois.edu_en_all_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/jeffe.cs.illinois.edu_en_all_2026-09.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 516538368,
+    "site": "other"
+  },
+  "datasets/programming/joomla.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/joomla.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 44991488,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/langdev.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/langdev.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 10936320,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/lua.org_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/lua.org_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 379923456,
+    "site": "other"
+  },
+  "datasets/programming/magento.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/magento.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 624975872,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/opendatastructures.org_en_all_2026-05.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/opendatastructures.org_en_all_2026-05.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 116369408,
+    "site": "other"
+  },
+  "datasets/programming/opensource.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/opensource.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 30510080,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/peps.python_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/peps.python_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 9095168,
+    "site": "other"
+  },
+  "datasets/programming/permacomputing.net_en_all_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/permacomputing.net_en_all_2026-09.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 1038336,
+    "site": "other"
+  },
+  "datasets/programming/php.net_en_all_2024-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/php.net_en_all_2024-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 32847872,
+    "site": "other"
+  },
+  "datasets/programming/raspberrypi.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/raspberrypi.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 298463232,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/retrocomputing.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/retrocomputing.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 123952128,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/salesforce.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/salesforce.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 762820608,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/serverfault.com_en_all_2026-02.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/serverfault.com_en_all_2026-02.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 1639953408,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/sharepoint.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/sharepoint.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 624745472,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/sitecore.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/sitecore.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 128701440,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/softwareengineering.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/softwareengineering.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 479115264,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/softwarerecs.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/softwarerecs.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 222081024,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/sqa.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/sqa.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 87734272,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/stackapps.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/stackapps.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 37105664,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/stackoverflow.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/stackoverflow.com_en_all_2026-07.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 114855633920,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/superuser.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/superuser.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 4003119104,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/tex.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/tex.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 4535083008,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/tridion.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/tridion.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 48581632,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/unix.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/unix.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 1312634880,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/vi.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/vi.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 90293248,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/webapps.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/webapps.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 288813056,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/webmasters.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/webmasters.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 226673664,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/wikipedia_en_computer_nopic_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_computer_nopic_2026-09.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 516701184,
+    "site": "wikipedia"
+  },
+  "datasets/programming/wordpress.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/wordpress.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 528435200,
+    "site": "stack_exchange"
+  },
+  "datasets/programming/www.mankier.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/www.mankier.com_en_all_2026-07.zim",
+    "categories": [
+      "programming"
+    ],
+    "model": "gonano-programming",
+    "size": 190124032,
+    "site": "other"
+  }
+}

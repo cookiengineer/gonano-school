@@ -48,7 +48,7 @@ type CommandRunner func(ctx context.Context, command TrainCommand) error
 // TrainOptions configures the orchestration run.
 type TrainOptions struct {
 	RootDir         string // default "."
-	CorpusDir       string // default <RootDir>/datasets/corpus
+	DatasetsDir     string // default <RootDir>/datasets; each model reads <DatasetsDir>/<category>/ directly
 	BaseDir         string // gonano cache/checkpoint dir; default $GONANO_BASE_DIR or ~/.cache/gonano
 	GonanoDir       string // gonano source checkout (required); commands run via `go run ./cmd/...`
 	VocabSize       int
@@ -95,7 +95,7 @@ func Train(ctx context.Context, items []Item, options TrainOptions) error {
 		}
 	}
 	baseModel := ModelName(CategoryBase)
-	baseCorpus := filepath.Join(options.CorpusDir, baseModel)
+	baseCorpus := filepath.Join(options.DatasetsDir, CategoryBase)
 	baseCheckpointDir := domainCheckpointDir(options.BaseDir, CategoryBase, options.ModelTag)
 
 	// 1) Shared tokenizer.
@@ -178,8 +178,8 @@ func Train(ctx context.Context, items []Item, options TrainOptions) error {
 		if err := ctx.Err(); err != nil {
 			return err
 		}
-		category := strings.TrimPrefix(model, ModelPrefix)
-		corpusDir := filepath.Join(options.CorpusDir, model)
+		category := ModelCategory(model)
+		corpusDir := filepath.Join(options.DatasetsDir, category)
 		if err := options.checkCorpus(corpusDir); err != nil {
 			wrapped := fmt.Errorf("trainer: %s: %w", model, err)
 			if !options.KeepGoing {
@@ -218,8 +218,8 @@ func (options *TrainOptions) applyDefaults() {
 	if options.RootDir == "" {
 		options.RootDir = "."
 	}
-	if options.CorpusDir == "" {
-		options.CorpusDir = filepath.Join(options.RootDir, "datasets", "corpus")
+	if options.DatasetsDir == "" {
+		options.DatasetsDir = filepath.Join(options.RootDir, "datasets")
 	}
 	if options.BaseDir == "" {
 		options.BaseDir = defaultBaseDir()

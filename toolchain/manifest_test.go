@@ -12,8 +12,8 @@ import (
 
 func TestManifestRoundTripAndDeterministicOrder(t *testing.T) {
 	manifest := types.Manifest{
-		"datasets/wikipedia/b.zim": {URL: "https://example/b.zim", Categories: []string{CategoryBase}, Model: "gonano-base", Size: 2},
-		"datasets/wikipedia/a.zim": {URL: "https://example/a.zim", Categories: []string{CategoryMath}, Model: "gonano-math", Size: 1},
+		"datasets/base/b.zim": {URL: "https://example/b.zim", Categories: []string{CategoryBase}, Model: "gonano-base", Size: 2},
+		"datasets/base/a.zim": {URL: "https://example/a.zim", Categories: []string{CategoryMath}, Model: "gonano-math", Size: 1},
 	}
 	path := filepath.Join(t.TempDir(), "manifest.json")
 	if err := SaveManifest(path, manifest); err != nil {
@@ -41,14 +41,69 @@ func TestManifestRoundTripAndDeterministicOrder(t *testing.T) {
 	if loaded.TotalSize() != 3 {
 		t.Fatalf("TotalSize = %d, want 3", loaded.TotalSize())
 	}
-	if keys := loaded.Keys(); keys[0] != "datasets/wikipedia/a.zim" {
+	if keys := loaded.Keys(); keys[0] != "datasets/base/a.zim" {
 		t.Fatalf("Keys[0] = %q", keys[0])
 	}
-	if site := types.KeySite("datasets/wikipedia/a.zim"); site != "wikipedia" {
-		t.Fatalf("KeySite = %q, want wikipedia", site)
+	if category := types.KeyCategory("datasets/base/a.zim"); category != "base" {
+		t.Fatalf("KeyCategory = %q, want base", category)
 	}
-	if site := types.KeySite("not-a-key"); site != "" {
-		t.Fatalf("KeySite malformed = %q, want empty", site)
+	if category := types.KeyCategory("not-a-key"); category != "" {
+		t.Fatalf("KeyCategory malformed = %q, want empty", category)
+	}
+}
+
+// TestSaveLoadManifests checks the per-category split: one file per category,
+// generated categories refreshed, and unmanaged static files left alone.
+func TestSaveLoadManifests(t *testing.T) {
+	dir := t.TempDir()
+	// A static file the updater must never touch.
+	static := types.Manifest{
+		"datasets/reasoning/magpie": {Kind: types.KindReasoning, Model: "gonano-base"},
+	}
+	if err := SaveManifest(filepath.Join(dir, "reasoning.json"), static); err != nil {
+		t.Fatal(err)
+	}
+
+	manifest := types.Manifest{
+		"datasets/base/a.zim":    {Model: "gonano-base"},
+		"datasets/physics/b.zim": {Model: "gonano-physics"},
+	}
+	if err := SaveManifests(dir, manifest, []string{CategoryBase, CategoryPhysics, CategoryChemistry}); err != nil {
+		t.Fatalf("SaveManifests: %v", err)
+	}
+	// An empty managed category that has no file is a no-op; create then remove one.
+	if err := SaveManifest(filepath.Join(dir, "chemistry.json"), types.Manifest{"datasets/chemistry/x.zim": {Model: "gonano-chemistry"}}); err != nil {
+		t.Fatal(err)
+	}
+	if err := SaveManifests(dir, manifest, []string{CategoryBase, CategoryPhysics, CategoryChemistry}); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := os.Stat(filepath.Join(dir, "chemistry.json")); !os.IsNotExist(err) {
+		t.Fatalf("stale chemistry.json not removed: %v", err)
+	}
+	if _, err := os.Stat(filepath.Join(dir, "reasoning.json")); err != nil {
+		t.Fatalf("static reasoning.json was touched: %v", err)
+	}
+
+	loaded, err := LoadManifests(dir)
+	if err != nil {
+		t.Fatalf("LoadManifests: %v", err)
+	}
+	if len(loaded) != 3 {
+		t.Fatalf("merged manifest = %d entries, want 3 (%#v)", len(loaded), loaded)
+	}
+	if !loaded["datasets/reasoning/magpie"].IsReasoning() {
+		t.Fatal("static reasoning entry missing after load")
+	}
+}
+
+func TestLoadManifestsMissingDirIsEmpty(t *testing.T) {
+	manifest, err := LoadManifests(filepath.Join(t.TempDir(), "absent"))
+	if err != nil {
+		t.Fatalf("LoadManifests: %v", err)
+	}
+	if len(manifest) != 0 {
+		t.Fatalf("expected empty manifest, got %d", len(manifest))
 	}
 }
 

@@ -1,0 +1,56 @@
+{
+  "datasets/history/folgerpedia.folger.edu_en_all_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/other/folgerpedia.folger.edu_en_all_2026-03.zim",
+    "categories": [
+      "history"
+    ],
+    "model": "gonano-history",
+    "size": 4201535488,
+    "site": "other"
+  },
+  "datasets/history/genealogy.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/genealogy.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "history"
+    ],
+    "model": "gonano-history",
+    "size": 63848448,
+    "site": "stack_exchange"
+  },
+  "datasets/history/history.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/history.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "history"
+    ],
+    "model": "gonano-history",
+    "size": 321030144,
+    "site": "stack_exchange"
+  },
+  "datasets/history/hsm.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/hsm.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "history"
+    ],
+    "model": "gonano-history",
+    "size": 49034240,
+    "site": "stack_exchange"
+  },
+  "datasets/history/wikipedia_en_history_nopic_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_history_nopic_2026-07.zim",
+    "categories": [
+      "history"
+    ],
+    "model": "gonano-history",
+    "size": 734661632,
+    "site": "wikipedia"
+  },
+  "datasets/history/womenshistory.si.edu_en_all_2025-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/womenshistory.si.edu_en_all_2025-03.zim",
+    "categories": [
+      "history"
+    ],
+    "model": "gonano-history",
+    "size": 4960311296,
+    "site": "other"
+  }
+}

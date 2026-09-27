@@ -1,0 +1,83 @@
+{
+  "datasets/cybersecurity/anonymousplanet.org_en_all_2026-05.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/anonymousplanet.org_en_all_2026-05.zim",
+    "categories": [
+      "cybersecurity"
+    ],
+    "model": "gonano-cybersecurity",
+    "size": 27886592,
+    "site": "other"
+  },
+  "datasets/cybersecurity/cloudflare.com_en_learning-center_2025-12.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/cloudflare.com_en_learning-center_2025-12.zim",
+    "categories": [
+      "cybersecurity"
+    ],
+    "model": "gonano-cybersecurity",
+    "size": 190723072,
+    "site": "other"
+  },
+  "datasets/cybersecurity/crypto.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/crypto.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "cybersecurity"
+    ],
+    "model": "gonano-cybersecurity",
+    "size": 184916992,
+    "site": "stack_exchange"
+  },
+  "datasets/cybersecurity/privacydefence.org_en_opsecbible_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/privacydefence.org_en_opsecbible_2026-09.zim",
+    "categories": [
+      "cybersecurity"
+    ],
+    "model": "gonano-cybersecurity",
+    "size": 173583360,
+    "site": "other"
+  },
+  "datasets/cybersecurity/reverseengineering.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/reverseengineering.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "cybersecurity"
+    ],
+    "model": "gonano-cybersecurity",
+    "size": 114984960,
+    "site": "stack_exchange"
+  },
+  "datasets/cybersecurity/security.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/security.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "cybersecurity"
+    ],
+    "model": "gonano-cybersecurity",
+    "size": 439160832,
+    "site": "stack_exchange"
+  },
+  "datasets/cybersecurity/sh1.org_en_all_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/sh1.org_en_all_2026-09.zim",
+    "categories": [
+      "cybersecurity"
+    ],
+    "model": "gonano-cybersecurity",
+    "size": 36063232,
+    "site": "other"
+  },
+  "datasets/cybersecurity/thalesdoc_en_all_2025-12.zim": {
+    "url": "https://lb.download.kiwix.org/zim/other/thalesdoc_en_all_2025-12.zim",
+    "categories": [
+      "cybersecurity"
+    ],
+    "model": "gonano-cybersecurity",
+    "size": 3105813504,
+    "site": "other"
+  },
+  "datasets/cybersecurity/tor.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/tor.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "cybersecurity"
+    ],
+    "model": "gonano-cybersecurity",
+    "size": 31878144,
+    "site": "stack_exchange"
+  }
+}

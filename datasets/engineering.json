@@ -1,0 +1,128 @@
+{
+  "datasets/engineering/3dprinting.stackexchange.com_en_all_2026-07a.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/3dprinting.stackexchange.com_en_all_2026-07a.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 120138752,
+    "site": "stack_exchange"
+  },
+  "datasets/engineering/aviation.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/aviation.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 506262528,
+    "site": "stack_exchange"
+  },
+  "datasets/engineering/cd3wdproject.org_en_all_2025-11.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/cd3wdproject.org_en_all_2025-11.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 581166080,
+    "site": "other"
+  },
+  "datasets/engineering/drones.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/drones.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 12689408,
+    "site": "stack_exchange"
+  },
+  "datasets/engineering/electronics.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/electronics.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 4214187008,
+    "site": "stack_exchange"
+  },
+  "datasets/engineering/engineering.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/engineering.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 255770624,
+    "site": "stack_exchange"
+  },
+  "datasets/engineering/ham.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/ham.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 75931648,
+    "site": "stack_exchange"
+  },
+  "datasets/engineering/ifixit_en_all_2025-12.zim": {
+    "url": "https://lb.download.kiwix.org/zim/ifixit/ifixit_en_all_2025-12.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 3570696192,
+    "site": "iFixit"
+  },
+  "datasets/engineering/mechanics.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/mechanics.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 339833856,
+    "site": "stack_exchange"
+  },
+  "datasets/engineering/networkengineering.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/networkengineering.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 129968128,
+    "site": "stack_exchange"
+  },
+  "datasets/engineering/openwrt.org_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/openwrt.org_en_all_2026-07.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 519895040,
+    "site": "other"
+  },
+  "datasets/engineering/robotics.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/robotics.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 243724288,
+    "site": "stack_exchange"
+  },
+  "datasets/engineering/survivorlibrary.com_en_all_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/survivorlibrary.com_en_all_2026-09.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 220347600896,
+    "site": "other"
+  },
+  "datasets/engineering/woodworking.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/woodworking.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "engineering"
+    ],
+    "model": "gonano-engineering",
+    "size": 105571328,
+    "site": "stack_exchange"
+  }
+}

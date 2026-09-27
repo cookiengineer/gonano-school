@@ -2,6 +2,6 @@
 *.tmp
 datasets/**/*.zim
 datasets/**/*.zim.meta4
-datasets/markdown/
-datasets/corpus/
+datasets/*/markdown/
 *.zim2md.report.txt
+datasets/reasoning/

@@ -1,0 +1,56 @@
+{
+  "datasets/medicine/irp.fas.org_en_military-medicine_2026-05.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/irp.fas.org_en_military-medicine_2026-05.zim",
+    "categories": [
+      "medicine"
+    ],
+    "model": "gonano-medicine",
+    "size": 75875328,
+    "site": "other"
+  },
+  "datasets/medicine/medicalsciences.stackexchange.com_en_all_2026-02.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/medicalsciences.stackexchange.com_en_all_2026-02.zim",
+    "categories": [
+      "medicine"
+    ],
+    "model": "gonano-medicine",
+    "size": 60800000,
+    "site": "stack_exchange"
+  },
+  "datasets/medicine/medlineplus.gov_en_all_2025-01.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/medlineplus.gov_en_all_2025-01.zim",
+    "categories": [
+      "medicine"
+    ],
+    "model": "gonano-medicine",
+    "size": 1944841216,
+    "site": "other"
+  },
+  "datasets/medicine/nhs.uk_en_medicines_2026-09b.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/nhs.uk_en_medicines_2026-09b.zim",
+    "categories": [
+      "medicine"
+    ],
+    "model": "gonano-medicine",
+    "size": 15323136,
+    "site": "other"
+  },
+  "datasets/medicine/wikipedia_en_medicine_nopic_2026-04.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_nopic_2026-04.zim",
+    "categories": [
+      "medicine"
+    ],
+    "model": "gonano-medicine",
+    "size": 862376960,
+    "site": "wikipedia"
+  },
+  "datasets/medicine/wwwnc.cdc.gov_en_all_2024-11.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/wwwnc.cdc.gov_en_all_2024-11.zim",
+    "categories": [
+      "medicine"
+    ],
+    "model": "gonano-medicine",
+    "size": 178327552,
+    "site": "other"
+  }
+}

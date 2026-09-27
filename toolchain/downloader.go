@@ -42,7 +42,7 @@ func (filter Filter) Match(key string, dataset types.Dataset) bool {
 		}
 	}
 	for _, site := range filter.Sites {
-		if types.KeySite(key) == site {
+		if dataset.Site == site || types.KeyCategory(key) == site {
 			return true
 		}
 	}

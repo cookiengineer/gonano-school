@@ -23,9 +23,9 @@ func trainManifest() types.Manifest {
 	}
 }
 
-func writeCorpus(t *testing.T, corpusDir, model string) {
+func writeCorpus(t *testing.T, datasetsDir, category string) {
 	t.Helper()
-	dir := filepath.Join(corpusDir, model)
+	dir := filepath.Join(datasetsDir, category, "markdown")
 	if err := os.MkdirAll(dir, 0o755); err != nil {
 		t.Fatalf("mkdir corpus: %v", err)
 	}
@@ -73,9 +73,9 @@ func baseCreatingRunner(t *testing.T, record *[]TrainCommand, baseDir, tag strin
 
 func TestTrainCommandSequence(t *testing.T) {
 	root := t.TempDir()
-	corpusDir := filepath.Join(root, "datasets", "corpus")
-	writeCorpus(t, corpusDir, ModelName(CategoryBase))
-	writeCorpus(t, corpusDir, ModelName(CategoryPhysics))
+	datasetsDir := filepath.Join(root, "datasets")
+	writeCorpus(t, datasetsDir, CategoryBase)
+	writeCorpus(t, datasetsDir, CategoryPhysics)
 	baseDir := t.TempDir()
 	gonanoDir := t.TempDir()
 
@@ -83,7 +83,7 @@ func TestTrainCommandSequence(t *testing.T) {
 	items := Select(trainManifest(), Filter{})
 	err := Train(context.Background(), items, TrainOptions{
 		RootDir:        root,
-		CorpusDir:      corpusDir,
+		DatasetsDir:    datasetsDir,
 		BaseDir:        baseDir,
 		GonanoDir:      gonanoDir,
 		Depth:          4,
@@ -138,9 +138,9 @@ func TestTrainCommandSequence(t *testing.T) {
 
 func TestTrainReusesBaseAndTokenizer(t *testing.T) {
 	root := t.TempDir()
-	corpusDir := filepath.Join(root, "datasets", "corpus")
-	writeCorpus(t, corpusDir, ModelName(CategoryBase))
-	writeCorpus(t, corpusDir, ModelName(CategoryPhysics))
+	datasetsDir := filepath.Join(root, "datasets")
+	writeCorpus(t, datasetsDir, CategoryBase)
+	writeCorpus(t, datasetsDir, CategoryPhysics)
 	baseDir := t.TempDir()
 
 	tokenizerDir := filepath.Join(baseDir, "tokenizer")
@@ -163,7 +163,7 @@ func TestTrainReusesBaseAndTokenizer(t *testing.T) {
 	items := Select(trainManifest(), Filter{})
 	err := Train(context.Background(), items, TrainOptions{
 		RootDir:        root,
-		CorpusDir:      corpusDir,
+		DatasetsDir:    datasetsDir,
 		BaseDir:        baseDir,
 		GonanoDir:      t.TempDir(),
 		Depth:          4,
@@ -195,15 +195,15 @@ func TestTrainRequiresGonanoDir(t *testing.T) {
 
 func TestTrainMissingSpecialtyCorpus(t *testing.T) {
 	root := t.TempDir()
-	corpusDir := filepath.Join(root, "datasets", "corpus")
-	writeCorpus(t, corpusDir, ModelName(CategoryBase))
+	datasetsDir := filepath.Join(root, "datasets")
+	writeCorpus(t, datasetsDir, CategoryBase)
 	baseDir := t.TempDir()
 
 	record := []TrainCommand{}
 	items := Select(trainManifest(), Filter{})
 	err := Train(context.Background(), items, TrainOptions{
 		RootDir:        root,
-		CorpusDir:      corpusDir,
+		DatasetsDir:    datasetsDir,
 		BaseDir:        baseDir,
 		GonanoDir:      t.TempDir(),
 		Depth:          4,
@@ -222,15 +222,15 @@ func TestTrainMissingSpecialtyCorpus(t *testing.T) {
 
 func TestTrainDryRunExecutesNothing(t *testing.T) {
 	root := t.TempDir()
-	corpusDir := filepath.Join(root, "datasets", "corpus")
-	writeCorpus(t, corpusDir, ModelName(CategoryBase))
+	datasetsDir := filepath.Join(root, "datasets")
+	writeCorpus(t, datasetsDir, CategoryBase)
 	baseDir := t.TempDir()
 
 	record := []TrainCommand{}
 	items := Select(trainManifest(), Filter{Models: []string{ModelName(CategoryBase)}})
 	err := Train(context.Background(), items, TrainOptions{
 		RootDir:        root,
-		CorpusDir:      corpusDir,
+		DatasetsDir:    datasetsDir,
 		BaseDir:        baseDir,
 		GonanoDir:      t.TempDir(),
 		Depth:          4,

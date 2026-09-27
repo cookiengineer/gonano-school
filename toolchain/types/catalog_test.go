@@ -35,19 +35,19 @@ func TestEntryAcquisitionMissing(t *testing.T) {
 	}
 }
 
-func TestKeySite(t *testing.T) {
-	if site := KeySite("datasets/wikipedia/foo.zim"); site != "wikipedia" {
-		t.Fatalf("KeySite = %q, want wikipedia", site)
+func TestKeyCategory(t *testing.T) {
+	if category := KeyCategory("datasets/base/foo.zim"); category != "base" {
+		t.Fatalf("KeyCategory = %q, want base", category)
 	}
 	for _, key := range []string{"", "foo.zim", "datasets/foo.zim", "a/b/c/d.zim"} {
-		if site := KeySite(key); site != "" {
-			t.Errorf("KeySite(%q) = %q, want empty", key, site)
+		if category := KeyCategory(key); category != "" {
+			t.Errorf("KeyCategory(%q) = %q, want empty", key, category)
 		}
 	}
 }
 
 func TestKeyFilename(t *testing.T) {
-	if name := KeyFilename("datasets/wikipedia/foo.zim"); name != "foo.zim" {
+	if name := KeyFilename("datasets/base/foo.zim"); name != "foo.zim" {
 		t.Fatalf("KeyFilename = %q, want foo.zim", name)
 	}
 	for _, key := range []string{"", "foo.zim", "datasets/foo.zim", "a/b/c/d.zim", "datasets/a/b/c.zim"} {

@@ -1,0 +1,11 @@
+{
+  "datasets/cyberstrategy/armypubs_en_all_2024-12.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/armypubs_en_all_2024-12.zim",
+    "categories": [
+      "cyberstrategy"
+    ],
+    "model": "gonano-cyberstrategy",
+    "size": 8232397824,
+    "site": "other"
+  }
+}

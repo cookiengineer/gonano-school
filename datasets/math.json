@@ -1,0 +1,146 @@
+{
+  "datasets/math/ethanweed_en_all_2025-11.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/ethanweed_en_all_2025-11.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 8382464,
+    "site": "other"
+  },
+  "datasets/math/learningstatistics_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/learningstatistics_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 33333248,
+    "site": "other"
+  },
+  "datasets/math/learningstatisticswithr.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/learningstatisticswithr.com_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 18523136,
+    "site": "other"
+  },
+  "datasets/math/lost-stats.github.io_en_all_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/lost-stats.github.io_en_all_2026-09.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 36017152,
+    "site": "other"
+  },
+  "datasets/math/math.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/math.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 7417272320,
+    "site": "stack_exchange"
+  },
+  "datasets/math/matheducators.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/matheducators.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 57902080,
+    "site": "stack_exchange"
+  },
+  "datasets/math/mathematica.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/mathematica.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 1597227008,
+    "site": "stack_exchange"
+  },
+  "datasets/math/mathoverflow.net_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/mathoverflow.net_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 848484352,
+    "site": "stack_exchange"
+  },
+  "datasets/math/mspeekenbrink_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/mspeekenbrink_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 6079488,
+    "site": "other"
+  },
+  "datasets/math/or.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/or.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 34713600,
+    "site": "stack_exchange"
+  },
+  "datasets/math/planetmath.org_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/planetmath.org_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 21542912,
+    "site": "other"
+  },
+  "datasets/math/proofassistants.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/proofassistants.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 11294720,
+    "site": "stack_exchange"
+  },
+  "datasets/math/quant.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/quant.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 159990784,
+    "site": "stack_exchange"
+  },
+  "datasets/math/stacks.math.columbia.edu_en_all_2025-06.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/stacks.math.columbia.edu_en_all_2025-06.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 154074112,
+    "site": "other"
+  },
+  "datasets/math/stats.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/stats.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 1634465792,
+    "site": "stack_exchange"
+  },
+  "datasets/math/wikipedia_en_mathematics_nopic_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_mathematics_nopic_2026-09.zim",
+    "categories": [
+      "math"
+    ],
+    "model": "gonano-math",
+    "size": 366085120,
+    "site": "wikipedia"
+  }
+}

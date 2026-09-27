@@ -1,0 +1,137 @@
+{
+  "datasets/science/apod.nasa.gov_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/apod.nasa.gov_en_all_2026-08.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 16678603776,
+    "site": "other"
+  },
+  "datasets/science/astronomy.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/astronomy.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 195956736,
+    "site": "stack_exchange"
+  },
+  "datasets/science/bioinformatics.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/bioinformatics.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 57554944,
+    "site": "stack_exchange"
+  },
+  "datasets/science/biology.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/biology.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 422850560,
+    "site": "stack_exchange"
+  },
+  "datasets/science/earthscience.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/earthscience.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 132396032,
+    "site": "stack_exchange"
+  },
+  "datasets/science/encyclopedie-environnement.org_en_all_2026-05.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/encyclopedie-environnement.org_en_all_2026-05.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 4117032960,
+    "site": "other"
+  },
+  "datasets/science/mattermodeling.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/mattermodeling.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 48775168,
+    "site": "stack_exchange"
+  },
+  "datasets/science/psiram_en_all_maxi_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/other/psiram_en_all_maxi_2026-08.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 4626432,
+    "site": "psiram"
+  },
+  "datasets/science/psychology.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/psychology.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 63688704,
+    "site": "stack_exchange"
+  },
+  "datasets/science/scicomp.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/scicomp.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 97831936,
+    "site": "stack_exchange"
+  },
+  "datasets/science/skeptics.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/skeptics.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 182566912,
+    "site": "stack_exchange"
+  },
+  "datasets/science/space.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/space.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 397631488,
+    "site": "stack_exchange"
+  },
+  "datasets/science/wikipedia_en_astronomy_nopic_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_astronomy_nopic_2026-08.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 403673088,
+    "site": "wikipedia"
+  },
+  "datasets/science/wikipedia_en_climate-change_nopic_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_climate-change_nopic_2026-07.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 86581248,
+    "site": "wikipedia"
+  },
+  "datasets/science/wikipedia_en_molcell_nopic_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_molcell_nopic_2026-07.zim",
+    "categories": [
+      "science"
+    ],
+    "model": "gonano-science",
+    "size": 338482176,
+    "site": "wikipedia"
+  }
+}

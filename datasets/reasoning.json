@@ -1,0 +1,38 @@
+{
+  "datasets/reasoning/magpie-reasoning-v2": {
+    "categories": [
+      "base",
+      "reasoning"
+    ],
+    "model": "gonano-base",
+    "kind": "reasoning",
+    "repo": "Magpie-Align/Magpie-Reasoning-V2-250K-CoT-Deepseek-R1-Llama-70B",
+    "config": "default",
+    "split": "train",
+    "site": "reasoning"
+  },
+  "datasets/reasoning/mixture-of-thoughts": {
+    "categories": [
+      "base",
+      "reasoning"
+    ],
+    "model": "gonano-base",
+    "kind": "reasoning",
+    "repo": "open-r1/Mixture-of-Thoughts",
+    "config": "all",
+    "split": "train",
+    "site": "reasoning"
+  },
+  "datasets/reasoning/openr1-math": {
+    "categories": [
+      "base",
+      "reasoning"
+    ],
+    "model": "gonano-base",
+    "kind": "reasoning",
+    "repo": "open-r1/OpenR1-Math-220k",
+    "config": "default",
+    "split": "train",
+    "site": "reasoning"
+  }
+}

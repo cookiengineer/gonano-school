@@ -1,0 +1,668 @@
+{
+  "datasets/base/100r.co_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/100r.co_en_all_2026-08.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 177187840,
+    "site": "other"
+  },
+  "datasets/base/based.cooking_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/based.cooking_en_all_2026-08.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 15775744,
+    "site": "other"
+  },
+  "datasets/base/booksdash_en_all_2024-06.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/booksdash_en_all_2024-06.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 11704392704,
+    "site": "other"
+  },
+  "datasets/base/chopin.lib.uchicago.edu_en_all_2025-01.zim": {
+    "url": "https://lb.download.kiwix.org/zim/other/chopin.lib.uchicago.edu_en_all_2025-01.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 8834036736,
+    "site": "other"
+  },
+  "datasets/base/citizensinformation.ie_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/citizensinformation.ie_en_all_2026-08.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 116882432,
+    "site": "other"
+  },
+  "datasets/base/foss.cooking_en_all_2026-05.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/foss.cooking_en_all_2026-05.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 24239104,
+    "site": "other"
+  },
+  "datasets/base/gotquestions.org_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/gotquestions.org_en_all_2026-07.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 15182660608,
+    "site": "other"
+  },
+  "datasets/base/grimgrains_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/grimgrains_en_all_2026-08.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 26030080,
+    "site": "other"
+  },
+  "datasets/base/gutenberg_en_all_2025-11.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_all_2025-11.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 221251591168,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-a_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-a_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 9746185216,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-b_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-b_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 6365165568,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-c_2025-12.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-c_2025-12.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 1322988544,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-d_2025-12.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-d_2025-12.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 40254449664,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-e_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-e_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 10196818944,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-f_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-f_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 9888134144,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-g_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-g_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 8095142912,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-h_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-h_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 4543003648,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-j_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-j_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 456641536,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-k_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-k_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 246517760,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-l_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-l_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 628986880,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-m_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-m_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 3994272768,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-n_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-n_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 22752881664,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-p_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-p_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 38550528,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pa_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pa_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 521989120,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pb_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pb_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 61479936,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pc_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pc_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 180376576,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pd_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pd_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 15091712,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pe_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pe_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 794872832,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pf_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pf_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 13156352,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pg_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pg_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 273911808,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-ph_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-ph_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 48643072,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pj_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pj_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 265420800,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pk_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pk_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 83982336,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pl_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pl_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 107229184,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pm_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pm_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 46747648,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pn_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pn_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 3248474112,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pq_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pq_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 4032702464,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pr_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pr_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 16152121344,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-ps_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-ps_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 16022294528,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pt_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pt_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 759081984,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-pz_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pz_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 19770263552,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-q_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-q_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 17724715008,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-r_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-r_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 2019298304,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-s_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-s_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 4532683776,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-t_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-t_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 13154803712,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-u_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-u_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 1288016896,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-v_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-v_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 1368904704,
+    "site": "gutenberg"
+  },
+  "datasets/base/gutenberg_en_lcc-z_2026-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-z_2026-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 2690468864,
+    "site": "gutenberg"
+  },
+  "datasets/base/internet-encyclopedia-philosophy_en_all_2026-05.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/internet-encyclopedia-philosophy_en_all_2026-05.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 125831168,
+    "site": "other"
+  },
+  "datasets/base/khanacademy_en_all_2023-03.zim": {
+    "url": "https://lb.download.kiwix.org/zim/other/khanacademy_en_all_2023-03.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 180007048192,
+    "site": "other"
+  },
+  "datasets/base/milneopentextbooks.org_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/milneopentextbooks.org_en_all_2026-08.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 422804480,
+    "site": "other"
+  },
+  "datasets/base/music.dalitio.de_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/music.dalitio.de_en_all_2026-08.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 39953408,
+    "site": "other"
+  },
+  "datasets/base/mutopiaproject.org_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/mutopiaproject.org_en_all_2026-08.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 6632476672,
+    "site": "other"
+  },
+  "datasets/base/openmusictheory.com_en_all_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/openmusictheory.com_en_all_2026-09.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 76967936,
+    "site": "other"
+  },
+  "datasets/base/phzh_core-english-one_en_2022-01.zim": {
+    "url": "https://lb.download.kiwix.org/zim/mooc/phzh_core-english-one_en_2022-01.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 96982016,
+    "site": "mooc"
+  },
+  "datasets/base/phzh_core-italian-one_it_2022-01.zim": {
+    "url": "https://lb.download.kiwix.org/zim/mooc/phzh_core-italian-one_it_2022-01.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 82543616,
+    "site": "mooc"
+  },
+  "datasets/base/publicdomainrecipes.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/publicdomainrecipes.com_en_all_2026-08.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 16972800,
+    "site": "other"
+  },
+  "datasets/base/vikidia_en_all_nopic_2026-09a.zim": {
+    "url": "https://lb.download.kiwix.org/zim/vikidia/vikidia_en_all_nopic_2026-09a.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 10556416,
+    "site": "vikidia"
+  },
+  "datasets/base/wikibooks_en_all_nopic_2026-04.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikibooks/wikibooks_en_all_nopic_2026-04.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 3507894272,
+    "site": "wikibooks"
+  },
+  "datasets/base/wikipedia_en-simple_all_nopic_2026-06.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en-simple_all_nopic_2026-06.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 990306304,
+    "site": "wikipedia"
+  },
+  "datasets/base/wikipedia_en_100_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_100_2026-08.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 333430784,
+    "site": "wikipedia"
+  },
+  "datasets/base/wikipedia_en_all_nopic_2026-06.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_all_nopic_2026-06.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 52690707456,
+    "site": "wikipedia"
+  },
+  "datasets/base/wikipedia_en_geography_nopic_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_geography_nopic_2026-07.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 570742784,
+    "site": "wikipedia"
+  },
+  "datasets/base/wikipedia_en_sociology_nopic_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_sociology_nopic_2026-07.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 241302528,
+    "site": "wikipedia"
+  },
+  "datasets/base/wikipedia_en_top1m_nopic_2026-04.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_top1m_nopic_2026-04.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 17134155776,
+    "site": "wikipedia"
+  },
+  "datasets/base/wikipedia_en_top_nopic_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_top_nopic_2026-09.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 2745850880,
+    "site": "wikipedia"
+  },
+  "datasets/base/wikiquote_en_all_nopic_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikiquote/wikiquote_en_all_nopic_2026-07.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 330032128,
+    "site": "wikiquote"
+  },
+  "datasets/base/wikisource_en_all_nopic_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikisource/wikisource_en_all_nopic_2026-09.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 3905589248,
+    "site": "wikisource"
+  },
+  "datasets/base/wikiversity_en_all_nopic_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikiversity/wikiversity_en_all_nopic_2026-08.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 1629888512,
+    "site": "wikiversity"
+  },
+  "datasets/base/wikivoyage_en_all_nopic_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikivoyage/wikivoyage_en_all_nopic_2026-09.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 272495616,
+    "site": "wikivoyage"
+  },
+  "datasets/base/wikivoyage_en_europe_nopic_2026-09.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikivoyage/wikivoyage_en_europe_nopic_2026-09.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 83537920,
+    "site": "wikivoyage"
+  },
+  "datasets/base/wiktionary_en-simple_all_nopic_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wiktionary/wiktionary_en-simple_all_nopic_2026-07.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 26535936,
+    "site": "wiktionary"
+  },
+  "datasets/base/wiktionary_en_all_nopic_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wiktionary/wiktionary_en_all_nopic_2026-08.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 9156425728,
+    "site": "wiktionary"
+  },
+  "datasets/base/www.ready.gov_en_2024-12.zim": {
+    "url": "https://lb.download.kiwix.org/zim/zimit/www.ready.gov_en_2024-12.zim",
+    "categories": [
+      "base"
+    ],
+    "model": "gonano-base",
+    "size": 2429922304,
+    "site": "other"
+  }
+}

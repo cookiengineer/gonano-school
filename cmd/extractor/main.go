@@ -25,9 +25,8 @@ func (list *stringList) Set(value string) error {
 }
 
 func main() {
-	manifestPath := flag.String("manifest", "manifest.json", "manifest path")
+	datasetsDir := flag.String("datasets", "datasets", "directory the per-category manifest files live in")
 	root := flag.String("root", ".", "root directory the manifest keys are relative to")
-	markdown := flag.String("markdown", "", "markdown output root (default <root>/datasets/markdown)")
 	zim2md := flag.String("zim2md", "zim2md", "zim2md binary or path")
 	jobs := flag.Int("jobs", 4, "parallel zim2md processes")
 	workers := flag.Int("workers", 1, "zim2md workers per process")
@@ -40,17 +39,18 @@ func main() {
 	flag.Var(&sites, "site", "select by kiwix category, e.g. wikipedia (repeatable)")
 	flag.Parse()
 
-	manifest, err := toolchain.LoadManifest(*manifestPath)
+	manifest, err := toolchain.LoadManifests(*datasetsDir)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "extractor:", err)
 		os.Exit(1)
 	}
 
-	items := toolchain.Select(manifest, toolchain.Filter{
+	// Reasoning datasets have no ZIM to extract; zim2md only handles archives.
+	items := toolchain.OnlyZIM(toolchain.Select(manifest, toolchain.Filter{
 		Models:     models,
 		Categories: categories,
 		Sites:      sites,
-	})
+	}))
 	if len(items) == 0 {
 		fmt.Fprintln(os.Stderr, "extractor: no datasets matched the given filters")
 		os.Exit(1)
@@ -61,7 +61,7 @@ func main() {
 
 	err = toolchain.Extract(ctx, items, toolchain.ExtractOptions{
 		RootDir:     *root,
-		MarkdownDir: *markdown,
+		DatasetsDir: *datasetsDir,
 		Zim2md:      *zim2md,
 		Jobs:        *jobs,
 		Workers:     *workers,

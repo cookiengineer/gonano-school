@@ -158,8 +158,11 @@ func TestBuildDataset(t *testing.T) {
 	if !ok {
 		t.Fatal("BuildDataset returned !ok")
 	}
-	if key != "datasets/wikipedia/wikipedia_en_physics_nopic_2026-07.zim" {
+	if key != "datasets/physics/wikipedia_en_physics_nopic_2026-07.zim" {
 		t.Errorf("key = %q", key)
+	}
+	if dataset.Site != "wikipedia" {
+		t.Errorf("site = %q, want wikipedia", dataset.Site)
 	}
 	if dataset.URL != "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_physics_nopic_2026-07.zim" {
 		t.Errorf("url = %q", dataset.URL)

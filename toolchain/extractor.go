@@ -10,6 +10,8 @@ import (
 	"strconv"
 	"strings"
 	"sync"
+
+	"gonano-school/toolchain/types"
 )
 
 // zim2mdInstallHint is appended to LookPath failures so the fix is obvious.
@@ -22,7 +24,7 @@ const zim2mdInstallHint = "go install github.com/cookiengineer/zim2md@latest"
 // processes that each spawn Workers goroutines and oversubscribe the host.
 type ExtractOptions struct {
 	RootDir     string // root directory the manifest keys are relative to
-	MarkdownDir string // output root; default <RootDir>/datasets/markdown
+	DatasetsDir string // dataset root; default <RootDir>/datasets
 	Zim2md      string // zim2md binary or path; default "zim2md"
 	Jobs        int    // parallel zim2md processes
 	Workers     int    // zim2md --workers per process
@@ -32,16 +34,19 @@ type ExtractOptions struct {
 	Logf        func(format string, args ...any)
 }
 
-// Extract converts every selected ZIM archive to Markdown with zim2md. Archives
-// whose output directory already exists and is non-empty are skipped unless
-// Force is set. zim2md is always run without --assets; only text pages become
-// .md files, which is all the trainer consumes.
+// Extract converts every selected ZIM archive to Markdown with zim2md. Each
+// archive's Markdown lands beside its archive under
+// <DatasetsDir>/<category>/markdown/<archive>/, so a category directory is
+// already the complete training input for its model -- there is no separate
+// corpus/symlink step. Archives whose output directory already exists and is
+// non-empty are skipped unless Force is set. zim2md is always run without
+// --assets; only text pages become .md files, which is all the trainer consumes.
 func Extract(ctx context.Context, items []Item, options ExtractOptions) error {
 	if options.RootDir == "" {
 		options.RootDir = "."
 	}
-	if options.MarkdownDir == "" {
-		options.MarkdownDir = filepath.Join(options.RootDir, "datasets", "markdown")
+	if options.DatasetsDir == "" {
+		options.DatasetsDir = filepath.Join(options.RootDir, "datasets")
 	}
 	if options.Jobs <= 0 {
 		options.Jobs = 1
@@ -61,7 +66,7 @@ func Extract(ctx context.Context, items []Item, options ExtractOptions) error {
 
 	if options.DryRun {
 		for _, item := range items {
-			outDir, err := archiveOutputDir(options, item)
+			_, outDir, err := archivePaths(options, item)
 			if err != nil {
 				return err
 			}
@@ -72,10 +77,6 @@ func Extract(ctx context.Context, items []Item, options ExtractOptions) error {
 			emit(options.Logf, "would extract %s -> %s", item.Key, outDir)
 		}
 		return nil
-	}
-
-	if err := os.MkdirAll(options.MarkdownDir, 0o755); err != nil {
-		return fmt.Errorf("extractor: mkdir %s: %w", options.MarkdownDir, err)
 	}
 
 	ctx, cancel := context.WithCancel(ctx)
@@ -136,7 +137,7 @@ func extractOne(ctx context.Context, item Item, options ExtractOptions, binary s
 		return fmt.Errorf("extractor: %s: zim archive not found", item.Key)
 	}
 
-	outDir, err := archiveOutputDir(options, item)
+	outRoot, outDir, err := archivePaths(options, item)
 	if err != nil {
 		return err
 	}
@@ -149,9 +150,12 @@ func extractOne(ctx context.Context, item Item, options ExtractOptions, binary s
 			return fmt.Errorf("extractor: %s: %w", item.Key, err)
 		}
 	}
+	if err := os.MkdirAll(outRoot, 0o755); err != nil {
+		return fmt.Errorf("extractor: %s: %w", item.Key, err)
+	}
 
 	args := []string{
-		"--output", options.MarkdownDir,
+		"--output", outRoot,
 		"--workers", strconv.Itoa(options.Workers),
 		"--quiet",
 	}
@@ -172,14 +176,16 @@ func extractOne(ctx context.Context, item Item, options ExtractOptions, binary s
 	return nil
 }
 
-// archiveOutputDir is the directory zim2md writes an archive's Markdown into
-// (<MarkdownDir>/<archive-basename>). It fails on a malformed manifest key.
-func archiveOutputDir(options ExtractOptions, item Item) (string, error) {
+// archivePaths returns the zim2md output root for an archive's category and the
+// archive's specific Markdown directory. It fails on a malformed manifest key.
+func archivePaths(options ExtractOptions, item Item) (root, outDir string, err error) {
+	category := types.KeyCategory(item.Key)
 	name := archiveName(item.Key)
-	if name == "" {
-		return "", fmt.Errorf("extractor: malformed manifest key %q", item.Key)
+	if category == "" || name == "" {
+		return "", "", fmt.Errorf("extractor: malformed manifest key %q", item.Key)
 	}
-	return filepath.Join(options.MarkdownDir, name), nil
+	root = filepath.Join(options.DatasetsDir, category, "markdown")
+	return root, filepath.Join(root, name), nil
 }
 
 // outputPresent reports whether dir exists and holds at least one entry.

@@ -1,0 +1,20 @@
+{
+  "datasets/chemistry/chemistry.stackexchange.com_en_all_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/chemistry.stackexchange.com_en_all_2026-07.zim",
+    "categories": [
+      "chemistry"
+    ],
+    "model": "gonano-chemistry",
+    "size": 417260544,
+    "site": "stack_exchange"
+  },
+  "datasets/chemistry/wikipedia_en_chemistry_nopic_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_chemistry_nopic_2026-07.zim",
+    "categories": [
+      "chemistry"
+    ],
+    "model": "gonano-chemistry",
+    "size": 130402304,
+    "site": "wikipedia"
+  }
+}

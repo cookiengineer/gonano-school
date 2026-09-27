@@ -26,7 +26,7 @@ func fakeZim2md(t *testing.T) (dir, logPath string) {
 
 func extractManifest() types.Manifest {
 	return types.Manifest{
-		"datasets/phet/physics.zim": {
+		"datasets/physics/physics.zim": {
 			Categories: []string{CategoryPhysics},
 			Model:      ModelName(CategoryPhysics),
 		},
@@ -70,7 +70,7 @@ func TestExtractInvokesZim2md(t *testing.T) {
 	t.Setenv("PATH", fakeDir)
 
 	root := t.TempDir()
-	writeZim(t, root, "datasets/phet/physics.zim")
+	writeZim(t, root, "datasets/physics/physics.zim")
 	items := Select(extractManifest(), Filter{})
 
 	if err := Extract(context.Background(), items, ExtractOptions{RootDir: root, Jobs: 1, Workers: 3}); err != nil {
@@ -78,8 +78,8 @@ func TestExtractInvokesZim2md(t *testing.T) {
 	}
 
 	args := readArgv(t, logPath)
-	markdownDir := filepath.Join(root, "datasets", "markdown")
-	zimPath := filepath.Join(root, "datasets", "phet", "physics.zim")
+	markdownDir := filepath.Join(root, "datasets", "physics", "markdown")
+	zimPath := filepath.Join(root, "datasets", "physics", "physics.zim")
 	for _, want := range []string{"--output", markdownDir, "--workers", "3", "--quiet", "--no-clobber", zimPath} {
 		if !containsArg(args, want) {
 			t.Errorf("argv missing %q: %#v", want, args)
@@ -98,8 +98,8 @@ func TestExtractSkipsPresent(t *testing.T) {
 	t.Setenv("PATH", fakeDir)
 
 	root := t.TempDir()
-	writeZim(t, root, "datasets/phet/physics.zim")
-	outDir := filepath.Join(root, "datasets", "markdown", "physics")
+	writeZim(t, root, "datasets/physics/physics.zim")
+	outDir := filepath.Join(root, "datasets", "physics", "markdown", "physics")
 	if err := os.MkdirAll(outDir, 0o755); err != nil {
 		t.Fatalf("mkdir: %v", err)
 	}
@@ -124,8 +124,8 @@ func TestExtractForceReExtracts(t *testing.T) {
 	t.Setenv("PATH", fakeDir)
 
 	root := t.TempDir()
-	writeZim(t, root, "datasets/phet/physics.zim")
-	outDir := filepath.Join(root, "datasets", "markdown", "physics")
+	writeZim(t, root, "datasets/physics/physics.zim")
+	outDir := filepath.Join(root, "datasets", "physics", "markdown", "physics")
 	if err := os.MkdirAll(outDir, 0o755); err != nil {
 		t.Fatalf("mkdir: %v", err)
 	}
@@ -181,12 +181,12 @@ func TestExtractMissingBinary(t *testing.T) {
 
 func TestExtractDryRun(t *testing.T) {
 	root := t.TempDir()
-	writeZim(t, root, "datasets/phet/physics.zim")
+	writeZim(t, root, "datasets/physics/physics.zim")
 	items := Select(extractManifest(), Filter{})
 	if err := Extract(context.Background(), items, ExtractOptions{RootDir: root, DryRun: true}); err != nil {
 		t.Fatalf("Extract dry-run: %v", err)
 	}
-	if _, err := os.Stat(filepath.Join(root, "datasets", "markdown")); !os.IsNotExist(err) {
+	if _, err := os.Stat(filepath.Join(root, "datasets", "physics", "markdown")); !os.IsNotExist(err) {
 		t.Fatal("dry-run created the markdown directory")
 	}
 }
@@ -199,9 +199,9 @@ func TestExtractKeepGoing(t *testing.T) {
 	t.Setenv("PATH", fakeDir)
 
 	root := t.TempDir()
-	writeZim(t, root, "datasets/phet/physics.zim")
+	writeZim(t, root, "datasets/physics/physics.zim")
 	manifest := extractManifest()
-	manifest["datasets/wikipedia/math.zim"] = types.Dataset{
+	manifest["datasets/math/math.zim"] = types.Dataset{
 		Categories: []string{CategoryMath},
 		Model:      ModelName(CategoryMath),
 	}

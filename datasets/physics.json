@@ -1,0 +1,29 @@
+{
+  "datasets/physics/phet_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/phet/phet_en_all_2026-08.zim",
+    "categories": [
+      "physics"
+    ],
+    "model": "gonano-physics",
+    "size": 108981248,
+    "site": "phet"
+  },
+  "datasets/physics/physics.stackexchange.com_en_all_2026-08.zim": {
+    "url": "https://lb.download.kiwix.org/zim/stack_exchange/physics.stackexchange.com_en_all_2026-08.zim",
+    "categories": [
+      "physics"
+    ],
+    "model": "gonano-physics",
+    "size": 1827691520,
+    "site": "stack_exchange"
+  },
+  "datasets/physics/wikipedia_en_physics_nopic_2026-07.zim": {
+    "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_physics_nopic_2026-07.zim",
+    "categories": [
+      "physics"
+    ],
+    "model": "gonano-physics",
+    "size": 318434304,
+    "site": "wikipedia"
+  }
+}
