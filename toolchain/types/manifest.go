@@ -63,3 +63,13 @@ func KeySite(key string) string {
 	}
 	return parts[1]
 }
+
+// KeyFilename extracts the "<file>.zim" segment of a manifest key
+// ("datasets/<kiwixCategory>/<file>.zim"). It returns "" for a malformed key.
+func KeyFilename(key string) string {
+	parts := strings.Split(key, "/")
+	if len(parts) != 3 || parts[0] != "datasets" {
+		return ""
+	}
+	return parts[2]
+}

@@ -23,7 +23,7 @@ datasets/{name}.zim -> zim2md -> exports datasets/markdown/${name} and datasets/
 | Phase | Contents                                      | State                |
 |-------|-----------------------------------------------|----------------------|
 |   1   | manifest, Kiwix catalog scrape, downloader    | implemented + tested |
-|   2   | ZIM to Markdown (`zim2md`), per-model corpora | planned              |
+|   2   | ZIM to Markdown (`zim2md`), per-model corpora | implemented + tested |
 |   3   | training orchestration, `--init-model`        | planned              |
 
 ## Building and Testing
@@ -81,6 +81,50 @@ go run ./cmd/downloader -dry-run;
 
 Filters combine as a union and repeated flags are allowed. Downloads are
 resumable (`.part` + rename) and it skips files whose size already matches.
+
+### 3. Extract ZIM to Markdown
+
+Converts the selected archives with [zim2md](https://github.com/cookiengineer/zim2md)
+into `datasets/markdown/<archive>/`. Already-extracted archives are skipped
+unless `-force` is given; `-jobs` sets how many `zim2md` processes run in
+parallel and `-workers` the per-process worker count. `--assets` is never used,
+so only text pages become `.md` files.
+
+```bash
+# everything (install zim2md first: go install github.com/cookiengineer/zim2md@latest)
+go run ./cmd/extractor;
+
+# one model, 8 parallel processes
+go run ./cmd/extractor -model gonano-physics -jobs 8;
+
+# re-extract everything, continue past failures
+go run ./cmd/extractor -force -keep-going;
+
+# preview
+go run ./cmd/extractor -dry-run;
+```
+
+### 4. Assemble Model Corpora
+
+Builds `datasets/corpus/<model>/` as real directories containing one link per
+Markdown file, mirroring the per-archive layout. Each model only aggregates its
+own category's archives; archives that have not been extracted are reported and
+skipped. `-link` selects `symlink` (default, relocatable) or `hardlink`
+(requires one filesystem).
+
+```bash
+# every model (symlinks)
+go run ./cmd/corpus;
+
+# one model, hardlinked
+go run ./cmd/corpus -model gonano-physics -link hardlink;
+
+# rebuild a model from scratch (prunes stale links)
+go run ./cmd/corpus -model gonano-base -force;
+```
+
+The resulting `datasets/corpus/<model>/` is the `--data-dir` for the gonano
+trainer in Phase 3.
 
 ## The `manifest.json`
 

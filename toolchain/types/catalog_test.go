@@ -46,6 +46,17 @@ func TestKeySite(t *testing.T) {
 	}
 }
 
+func TestKeyFilename(t *testing.T) {
+	if name := KeyFilename("datasets/wikipedia/foo.zim"); name != "foo.zim" {
+		t.Fatalf("KeyFilename = %q, want foo.zim", name)
+	}
+	for _, key := range []string{"", "foo.zim", "datasets/foo.zim", "a/b/c/d.zim", "datasets/a/b/c.zim"} {
+		if name := KeyFilename(key); name != "" {
+			t.Errorf("KeyFilename(%q) = %q, want empty", key, name)
+		}
+	}
+}
+
 func TestManifestHelpers(t *testing.T) {
 	manifest := Manifest{
 		"datasets/a/x.zim": {Categories: []string{"base"}, Size: 2},
