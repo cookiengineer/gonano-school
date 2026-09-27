@@ -10,12 +10,11 @@ in their training from the base checkpoint, so a gonano model name maps
 directly to the datasets it was trained on.
 
 ```
-kiwix online catalog -> updater.go -> updates manifest.json
-
-manifest.json -> downloader.go -> downloads datasets/*.zim
-
-# this will create symbolic links from the 1 corpus model back to the n markdown datasets
-datasets/{name}.zim -> zim2md -> exports datasets/markdown/${name} and datasets/corpus/$model}
+kiwix online catalog -> updater    -> manifest.json
+manifest.json        -> downloader -> datasets/<site>/<archive>.zim
+datasets/*.zim       -> extractor  -> datasets/markdown/<archive>/*.md
+markdown             -> corpus     -> datasets/corpus/<model>/  (links)
+corpus + manifest    -> trainer    -> ~/.cache/gonano/domains/<cat>/.../*.gn
 ```
 
 ## Status
@@ -24,7 +23,7 @@ datasets/{name}.zim -> zim2md -> exports datasets/markdown/${name} and datasets/
 |-------|-----------------------------------------------|----------------------|
 |   1   | manifest, Kiwix catalog scrape, downloader    | implemented + tested |
 |   2   | ZIM to Markdown (`zim2md`), per-model corpora | implemented + tested |
-|   3   | training orchestration, `--init-model`        | planned              |
+|   3   | training orchestration, `--init-model`        | implemented + tested |
 
 ## Building and Testing
 
@@ -124,7 +123,43 @@ go run ./cmd/corpus -model gonano-base -force;
 ```
 
 The resulting `datasets/corpus/<model>/` is the `--data-dir` for the gonano
-trainer in Phase 3.
+trainer.
+
+### 5. Train Models
+
+Orchestrates the gonano pipeline against a gonano source checkout
+(`-gonano-dir`, run via `go run ./cmd/...`):
+
+1. train the shared tokenizer once on the base corpus (`tok_train`),
+2. train `gonano-base` from scratch into `domains/base/base_checkpoints/<tag>/`,
+3. continue-pretrain every selected specialty model from that base checkpoint
+   into `domains/<cat>/base_checkpoints/<tag>/` (`--init-model`).
+
+Every command runs with `GOEXPERIMENT=simd`. `gonano-base` is always trained (or
+reused) because each specialty continues from it; selecting only
+`-model gonano-physics` still ensures base exists.
+
+```bash
+# everything: tokenizer + base + all selected domains
+go run ./cmd/trainer -gonano-dir ~/Software/cookiengineer/gonano \
+  -depth 8 -num-iterations 200;
+
+# one specialty (base is trained first unless -reuse-base)
+go run ./cmd/trainer -gonano-dir ~/Software/cookiengineer/gonano \
+  -model gonano-physics;
+
+# reuse an existing base checkpoint and tokenizer, only retrain physics
+go run ./cmd/trainer -gonano-dir ~/Software/cookiengineer/gonano \
+  -model gonano-physics -reuse-base;
+
+# continue past failing domains; preview without running
+go run ./cmd/trainer -gonano-dir ~/Software/cookiengineer/gonano -keep-going;
+go run ./cmd/trainer -gonano-dir ~/Software/cookiengineer/gonano -dry-run;
+```
+
+Defaults are `-vocab-size 32768`, `-depth 8`, `-preset flash`, `-num-iterations
+200`; override them for the target host. `-base-dir` defaults to
+`$GONANO_BASE_DIR` or `~/.cache/gonano`.
 
 ## The `manifest.json`
 
